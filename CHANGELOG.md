@@ -1,5 +1,10 @@
 ## 1.0.1
 
+- Add icon
+
+
+## 1.0.1
+
 - Removed the header above the bars
 - Added auto-hiding of the panel in parties and raids when there are no tracked healers
 - Changing the style no longer re-reads mana
