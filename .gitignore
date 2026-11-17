@@ -1,0 +1,7 @@
+/.work/
+/dist/
+/docs/CHANGELOG.md
+/tools/package.py
+__pycache__/
+*.luac
+*.obj

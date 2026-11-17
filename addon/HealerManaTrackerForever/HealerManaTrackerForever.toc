@@ -1,0 +1,16 @@
+## Interface: 16001
+## AllowLoadGameType: forever
+## Title: Healer Mana Tracker Forever
+## Notes: Simple and minimalistic addon to track healer mana bars for parties and raids in World of Warcraft: Forever
+## Notes-ruRU: Простой аддон для отслеживания полос маны лекарей в группах и рейдах в World of Warcraft: Forever
+## Author: train-octarine
+## Version: 1.0.1
+## SavedVariables: HealerManaTrackerForeverDB
+
+Locale.lua
+Settings.lua
+Mana.lua
+Roster.lua
+Display.lua
+Options.lua
+Core.lua
