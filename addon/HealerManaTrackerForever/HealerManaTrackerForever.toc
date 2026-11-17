@@ -4,7 +4,8 @@
 ## Notes: Simple and minimalistic addon to track healer mana bars for parties and raids in World of Warcraft: Forever
 ## Notes-ruRU: Простой аддон для отслеживания полос маны лекарей в группах и рейдах в World of Warcraft: Forever
 ## Author: train-octarine
-## Version: 1.0.1
+## Version: 1.0.2
+## IconTexture: Interface\AddOns\HealerManaTrackerForever\Media\Icon.tga
 ## SavedVariables: HealerManaTrackerForeverDB
 
 Locale.lua
