@@ -13,6 +13,8 @@ local defaultSettings = {
     showPercent = true,
     showBorder = true,
     locked = true,
+    lowManaColorMode = "disabled",
+    lowManaColorThreshold = 50,
 }
 
 local sliderRanges = {
@@ -22,6 +24,7 @@ local sliderRanges = {
     backgroundOpacity = { minimum = 0, maximum = 100, step = 5 },
     scale = { minimum = 65, maximum = 155, step = 5 },
     fontSize = { minimum = 9, maximum = 18, step = 1 },
+    lowManaColorThreshold = { minimum = 1, maximum = 99, step = 1 },
 }
 
 local defaultPosition = { point = "CENTER", relativePoint = "CENTER", x = 250, y = 100 }
@@ -37,6 +40,7 @@ local Config = {
     choices = {
         visibility = { "always", "party", "raid", "grouped" },
         tracking = { "automatic", "allMana" },
+        lowManaColorMode = { "disabled", "party", "grouped" },
     },
 }
 addon.Config = Config

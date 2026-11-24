@@ -10,4 +10,5 @@ read_globals = {
     "MinimalSliderWithSteppersMixin.Label.Right", "PLAYER_OFFLINE", "Settings", "UIParent", "UNKNOWN", "UNKNOWNOBJECT",
     "UnitClass", "UnitExists", "UnitFullName", "UnitGroupRolesAssigned", "UnitHasPowerType", "UnitInRaid",
     "UnitIsConnected", "UnitIsDeadOrGhost", "UnitPower", "UnitPowerMax", "UnitPowerPercent", "wipe",
+    "C_CurveUtil.CreateColorCurve", "CreateColor", "Enum.LuaCurveType.Step",
 }

@@ -34,6 +34,10 @@ local english = {
     showBorder = "Show panel border",
     locked = "Lock panel position",
     lockedTip = "Unlock to drag the panel with the left mouse button.",
+    lowManaColorMode = "Low mana bar color",
+    lowManaColorModeTip = "Mana bars turn red below the threshold and return to blue as mana recovers.",
+    lowManaColorThreshold = "Low mana threshold",
+    disabled = "Disabled",
     members = "Manual tracking",
     membersHint = "Choose which players to track. Choices are saved by character name and realm"
         .. " and apply in both tracking modes.",
@@ -78,6 +82,11 @@ local russian = {
     showBorder = "Показывать рамку панели",
     locked = "Закрепить панель",
     lockedTip = "Снимите флажок, чтобы перетащить панель левой кнопкой мыши.",
+    lowManaColorMode = "Цвет полосы при низкой мане",
+    lowManaColorModeTip = "Ниже порога полосы становятся красными"
+        .. " и возвращаются к синему цвету при восстановлении маны.",
+    lowManaColorThreshold = "Порог низкой маны",
+    disabled = "Выключено",
     members = "Ручное отслеживание",
     membersHint = "Выберите, кого отслеживать. Выбор сохраняется по имени персонажа и игровому миру"
         .. " и действует в обоих режимах.",

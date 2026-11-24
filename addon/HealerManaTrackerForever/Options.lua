@@ -6,6 +6,7 @@ addon.Options = Options
 
 local settingOrder = {
     "visibility", "hideWithoutHealers", "tracking", "locked", "showPercent", "showBorder",
+    "lowManaColorMode", "lowManaColorThreshold",
     "width", "rowHeight", "fontSize", "scale", "fillOpacity", "backgroundOpacity",
 }
 
@@ -26,10 +27,11 @@ local function CreateSettingsControl(category, settingKey)
                 labels:Add(choice, Locale[choice])
             end
             return labels:GetData()
-        end, settingKey == "tracking" and Locale.trackingTip or nil)
+        end, Locale[settingKey .. "Tip"])
     elseif range then
         local sliderOptions = Settings.CreateSliderOptions(range.minimum, range.maximum, range.step)
-        local format = (settingKey == "scale" or settingKey == "fillOpacity" or settingKey == "backgroundOpacity")
+        local format = (settingKey == "scale" or settingKey == "fillOpacity" or settingKey == "backgroundOpacity"
+            or settingKey == "lowManaColorThreshold")
             and Locale.percentage or "%.0f"
         sliderOptions:SetLabelFormatter(MinimalSliderWithSteppersMixin.Label.Right, function(value)
             return format:format(value)

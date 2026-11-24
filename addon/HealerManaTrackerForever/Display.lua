@@ -188,7 +188,7 @@ local function Layout(rowCount)
     for index = 1, rowCount do
         local row = Display.rows[index]
         row:SetSize(viewportWidth, rowHeight)
-        row:SetStatusBarColor(0.20, 0.52, 0.91, settings.fillOpacity / 100)
+        Mana.ApplyBarColor(row)
         row.nameText:SetFontHeight(fontSize)
         row.valueText:SetFontHeight(fontSize)
         row.valueText:SetHeight(rowHeight)
@@ -246,6 +246,9 @@ function Display.Render(roster, previewEnabled)
     end
 
     local rowCount = previewEnabled and #previewManaPercentages or #roster.trackedMembers
+    local colorMode = Config.values.lowManaColorMode
+    local useLowManaColor = colorMode ~= "disabled" and (previewEnabled or roster.groupType == "party"
+        or (colorMode == "grouped" and roster.groupType == "raid"))
     if previewEnabled ~= Display.previewEnabled then
         Display.viewport:SetVerticalScroll(0)
         Display.previewEnabled = previewEnabled
@@ -253,10 +256,11 @@ function Display.Render(roster, previewEnabled)
 
     for index = 1, rowCount do
         local row = GetOrCreateManaRow(index)
+        row.useLowManaColor = useLowManaColor
         if previewEnabled then
             row.unitStatus = nil
             row.nameText:SetText(Locale.sampleNames[index])
-            Mana.SetPercent(row, previewManaPercentages[index], Config.values.showPercent)
+            Mana.SetPreviewPercent(row, previewManaPercentages[index], Config.values.showPercent)
         else
             local member = roster.trackedMembers[index]
             local name = member.name or Locale.unknown

@@ -22,7 +22,8 @@ function addon.ChangeOption(settingKey, value)
     Config.SetOption(settingKey, value)
     if settingKey == "tracking" then
         addon.RefreshRoster()
-    elseif settingKey == "visibility" or settingKey == "hideWithoutHealers" or settingKey == "showPercent" then
+    elseif settingKey == "visibility" or settingKey == "hideWithoutHealers" or settingKey == "showPercent"
+        or settingKey == "lowManaColorMode" or settingKey == "lowManaColorThreshold" then
         RenderPanel()
     else
         if settingKey == "scale" then
