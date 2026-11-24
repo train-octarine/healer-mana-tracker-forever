@@ -1,3 +1,8 @@
+## 1.0.3
+
+- Added optional low mana bar coloring with an adjustable threshold and party/raid settings
+- Added new localization options
+
 ## 1.0.2
 
 - Add icon

@@ -101,9 +101,213 @@ local russian = {
         .. "/hmtracker position — сброс положения, /hmtracker reset — сброс всех настроек, /hmtracker help — справка.",
 }
 
+local spanish = {
+    empty = "No hay sanadores que mostrar",
+    unknown = "Jugador desconocido",
+    candidate = "%s (?)",
+    unavailable = "—",
+    percentage = "%.0f%%",
+    sampleNames = { "Alba", "Sauce", "Fresno" },
+    previewOn = "Vista previa activada. Usa /hmtracker preview para salir.",
+    previewOff = "Vista previa desactivada.",
+    visibility = "Mostrar panel",
+    always = "Siempre",
+    party = "Solo en grupo",
+    raid = "Solo en banda",
+    grouped = "En grupo o banda",
+    hideWithoutHealers = "Ocultar el panel si no hay sanadores",
+    tracking = "Jugadores mostrados",
+    automatic = "Sanadores (automático)",
+    allMana = "Todos con maná",
+    trackingTip = "El modo automático usa los roles asignados."
+        .. " Un signo de interrogación indica un posible sanador.",
+    width = "Ancho de las barras",
+    rowHeight = "Altura de las barras",
+    fillOpacity = "Opacidad de la barra de maná",
+    backgroundOpacity = "Opacidad del fondo",
+    scale = "Escala del panel",
+    fontSize = "Tamaño de la fuente",
+    showPercent = "Mostrar porcentaje de maná",
+    showBorder = "Mostrar borde del panel",
+    locked = "Fijar posición del panel",
+    lockedTip = "Desbloquea el panel para arrastrarlo con el botón izquierdo.",
+    lowManaColorMode = "Color con maná bajo",
+    lowManaColorModeTip = "Las barras se vuelven rojas por debajo del umbral"
+        .. " y recuperan el color azul al regenerar maná.",
+    lowManaColorThreshold = "Umbral de maná bajo",
+    disabled = "Desactivado",
+    members = "Selección manual",
+    membersHint = "Elige qué jugadores mostrar. La selección se guarda por nombre de personaje y reino"
+        .. " y se aplica en ambos modos.",
+    noMembers = "No hay jugadores con maná y nombre conocido.",
+    memberName = "%s — %s",
+    useMode = "Según el modo",
+    include = "Incluir",
+    exclude = "Excluir",
+    resetPosition = "Posición del panel restablecida.",
+    resetAll = "Ajustes restablecidos.",
+    help = "/hmtracker — opciones, /hmtracker members — selección manual, "
+        .. "/hmtracker preview — vista previa, /hmtracker position — restablecer posición, "
+        .. "/hmtracker reset — restablecer ajustes, /hmtracker help — ayuda.",
+}
+
+local german = {
+    empty = "Keine Heiler zum Anzeigen",
+    unknown = "Unbekannter Spieler",
+    candidate = "%s (?)",
+    unavailable = "—",
+    percentage = "%.0f%%",
+    sampleNames = { "Erle", "Esche", "Linde" },
+    previewOn = "Vorschau aktiviert. Mit /hmtracker preview beenden.",
+    previewOff = "Vorschau deaktiviert.",
+    visibility = "Fenster anzeigen",
+    always = "Immer",
+    party = "Nur in Gruppen",
+    raid = "Nur in Schlachtzügen",
+    grouped = "In Gruppen und Schlachtzügen",
+    hideWithoutHealers = "Ohne Heiler ausblenden",
+    tracking = "Angezeigte Spieler",
+    automatic = "Heiler (automatisch)",
+    allMana = "Alle mit Mana",
+    trackingTip = "Der automatische Modus nutzt die zugewiesenen Rollen."
+        .. " Ein Fragezeichen kennzeichnet einen möglichen Heiler.",
+    width = "Balkenbreite",
+    rowHeight = "Balkenhöhe",
+    fillOpacity = "Deckkraft der Manabalken",
+    backgroundOpacity = "Deckkraft des Hintergrunds",
+    scale = "Fensterskalierung",
+    fontSize = "Schriftgröße",
+    showPercent = "Manaprozentsatz anzeigen",
+    showBorder = "Fensterrahmen anzeigen",
+    locked = "Fensterposition fixieren",
+    lockedTip = "Position entsperren, um das Fenster mit der linken Maustaste zu verschieben.",
+    lowManaColorMode = "Farbe bei wenig Mana",
+    lowManaColorModeTip = "Unterhalb der Schwelle werden die Balken rot."
+        .. " Sobald sich das Mana erholt, werden sie wieder blau.",
+    lowManaColorThreshold = "Manaschwelle",
+    disabled = "Deaktiviert",
+    members = "Manuelle Auswahl",
+    membersHint = "Wähle die angezeigten Spieler. Die Auswahl wird nach Charaktername und Realm gespeichert"
+        .. " und gilt für beide Anzeigemodi.",
+    noMembers = "Keine Spieler mit Mana und bekanntem Namen.",
+    memberName = "%s — %s",
+    useMode = "Nach Anzeigemodus",
+    include = "Einbeziehen",
+    exclude = "Ausschließen",
+    resetPosition = "Fensterposition zurückgesetzt.",
+    resetAll = "Einstellungen zurückgesetzt.",
+    help = "/hmtracker — Optionen, /hmtracker members — manuelle Auswahl, "
+        .. "/hmtracker preview — Vorschau umschalten, /hmtracker position — Position zurücksetzen, "
+        .. "/hmtracker reset — Einstellungen zurücksetzen, /hmtracker help — Hilfe.",
+}
+
+local french = {
+    empty = "Aucun soigneur à afficher",
+    unknown = "Joueur inconnu",
+    candidate = "%s (?)",
+    unavailable = "—",
+    percentage = "%.0f%%",
+    sampleNames = { "Lilas", "Aulne", "Frêne" },
+    previewOn = "Aperçu activé. Utilisez /hmtracker preview pour le désactiver.",
+    previewOff = "Aperçu désactivé.",
+    visibility = "Afficher le panneau",
+    always = "Toujours",
+    party = "En groupe uniquement",
+    raid = "En raid uniquement",
+    grouped = "En groupe ou en raid",
+    hideWithoutHealers = "Masquer le panneau sans soigneur",
+    tracking = "Joueurs suivis",
+    automatic = "Soigneurs (automatique)",
+    allMana = "Tous avec du mana",
+    trackingTip = "Le mode automatique utilise les rôles assignés."
+        .. " Un point d'interrogation indique un soigneur potentiel.",
+    width = "Largeur des barres",
+    rowHeight = "Hauteur des barres",
+    fillOpacity = "Opacité des barres de mana",
+    backgroundOpacity = "Opacité du fond",
+    scale = "Échelle du panneau",
+    fontSize = "Taille de la police",
+    showPercent = "Afficher le pourcentage de mana",
+    showBorder = "Afficher la bordure du panneau",
+    locked = "Verrouiller la position du panneau",
+    lockedTip = "Déverrouillez le panneau pour le déplacer avec le bouton gauche de la souris.",
+    lowManaColorMode = "Couleur si mana faible",
+    lowManaColorModeTip = "Les barres deviennent rouges sous le seuil"
+        .. " et redeviennent bleues quand le mana remonte.",
+    lowManaColorThreshold = "Seuil de mana faible",
+    disabled = "Désactivé",
+    members = "Suivi manuel",
+    membersHint = "Choisissez les joueurs à suivre. Le choix est enregistré par nom de personnage et royaume"
+        .. " et s'applique aux deux modes de suivi.",
+    noMembers = "Aucun joueur avec du mana et un nom connu.",
+    memberName = "%s — %s",
+    useMode = "Selon le mode",
+    include = "Inclure",
+    exclude = "Exclure",
+    resetPosition = "Position du panneau réinitialisée.",
+    resetAll = "Paramètres réinitialisés.",
+    help = "/hmtracker — options, /hmtracker members — suivi manuel, "
+        .. "/hmtracker preview — activer ou désactiver l'aperçu, /hmtracker position — réinitialiser la position, "
+        .. "/hmtracker reset — réinitialiser les paramètres, /hmtracker help — aide.",
+}
+
+local portuguese = {
+    empty = "Nenhum curador para exibir",
+    unknown = "Jogador desconhecido",
+    candidate = "%s (?)",
+    unavailable = "—",
+    percentage = "%.0f%%",
+    sampleNames = { "Aurora", "Cedro", "Freixo" },
+    previewOn = "Prévia ativada. Use /hmtracker preview para sair.",
+    previewOff = "Prévia desativada.",
+    visibility = "Exibir painel",
+    always = "Sempre",
+    party = "Somente em grupo",
+    raid = "Somente em raide",
+    grouped = "Em grupo ou raide",
+    hideWithoutHealers = "Ocultar o painel quando não houver curadores",
+    tracking = "Jogadores exibidos",
+    automatic = "Curadores (automático)",
+    allMana = "Todos com mana",
+    trackingTip = "O modo automático usa as funções atribuídas."
+        .. " Um ponto de interrogação indica um possível curador.",
+    width = "Largura das barras",
+    rowHeight = "Altura das barras",
+    fillOpacity = "Opacidade das barras de mana",
+    backgroundOpacity = "Opacidade do fundo",
+    scale = "Escala do painel",
+    fontSize = "Tamanho da fonte",
+    showPercent = "Exibir porcentagem de mana",
+    showBorder = "Exibir borda do painel",
+    locked = "Travar posição do painel",
+    lockedTip = "Destrave o painel para arrastá-lo com o botão esquerdo do mouse.",
+    lowManaColorMode = "Cor com pouca mana",
+    lowManaColorModeTip = "As barras ficam vermelhas abaixo do limite"
+        .. " e voltam a ficar azuis quando a mana se recupera.",
+    lowManaColorThreshold = "Limite de mana baixa",
+    disabled = "Desativado",
+    members = "Seleção manual",
+    membersHint = "Escolha os jogadores a exibir. A seleção é salva por nome de personagem e reino"
+        .. " e vale para os dois modos.",
+    noMembers = "Nenhum jogador com mana e nome conhecido.",
+    memberName = "%s — %s",
+    useMode = "Usar modo de exibição",
+    include = "Incluir",
+    exclude = "Excluir",
+    resetPosition = "Posição do painel redefinida.",
+    resetAll = "Configurações redefinidas.",
+    help = "/hmtracker — opções, /hmtracker members — seleção manual, "
+        .. "/hmtracker preview — ativar ou desativar prévia, /hmtracker position — redefinir posição, "
+        .. "/hmtracker reset — redefinir configurações, /hmtracker help — ajuda.",
+}
+
+local translations = {
+    enUS = english, enGB = english, ruRU = russian,
+    esES = spanish, esMX = spanish, deDE = german, frFR = french, ptBR = portuguese,
+}
 local clientLocale = GetLocale()
-local strings = clientLocale == "ruRU" and russian or english
-if clientLocale == "enUS" or clientLocale == "ruRU" then
+local strings = translations[clientLocale] or english
+if translations[clientLocale] then
     strings.offline = PLAYER_OFFLINE
     strings.dead = DEAD
 end

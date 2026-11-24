@@ -2,7 +2,11 @@
 
 Shows healer mana in parties and raids in World of Warcraft: Forever. Each bar shows the player's name and mana percentage.
 
-The add-on uses assigned roles to find healers. A `?` marks a player who may be a healer when their role is unavailable. You can track everyone with mana, hide the panel when there are no healers to track, resize the bars, and move the panel.
+- Track healers by assigned role. A ? marks a possible healer when their role is unavailable.
+- Choose to track everyone with mana.
+- Hide the panel when there are no healers to track.
+- Resize the bars and move the panel.
+- Turn bars red below a configurable mana threshold. Choose parties only or both parties and raids. Disabled by default.
 
 ## Installation
 

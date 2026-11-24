@@ -3,8 +3,13 @@
 ## Title: Healer Mana Tracker Forever
 ## Notes: Simple and minimalistic addon to track healer mana bars for parties and raids in World of Warcraft: Forever
 ## Notes-ruRU: Простой аддон для отслеживания полос маны лекарей в группах и рейдах в World of Warcraft: Forever
+## Notes-esES: Muestra el maná de los sanadores en grupos y bandas de World of Warcraft: Forever
+## Notes-esMX: Muestra el maná de los sanadores en grupos y bandas de World of Warcraft: Forever
+## Notes-deDE: Zeigt die Manabalken von Heilern in Gruppen und Schlachtzügen in World of Warcraft: Forever
+## Notes-frFR: Affiche le mana des soigneurs en groupe et en raid dans World of Warcraft: Forever
+## Notes-ptBR: Exibe a mana dos curadores em grupos e raides de World of Warcraft: Forever
 ## Author: train-octarine
-## Version: 1.0.2
+## Version: 1.0.3
 ## IconTexture: Interface\AddOns\HealerManaTrackerForever\Media\Icon.tga
 ## SavedVariables: HealerManaTrackerForeverDB
 
